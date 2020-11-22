@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'tsx-component-does-not-rebuild'`, () => {
+  it(`should have as title 'tsx-css-not-rebuilding'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('tsx-component-does-not-rebuild');
+    expect(app.title).toEqual('tsx-css-not-rebuilding');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('tsx-component-does-not-rebuild app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('tsx-css-not-rebuilding app is running!');
   });
 });
